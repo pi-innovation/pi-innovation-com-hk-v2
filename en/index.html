@@ -26,13 +26,13 @@
     </script>
 
     <!-- Title -->
-    <title>Pi Innovation | STEM Education Services</title>
+    <title>Pi STEM Services | STEM Education Services</title>
 
     <!-- Required Meta Tags Always Come First -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="Pi Innovation Team has started promoting STEM and innovation education since 2012. We provide customized courses and workshops for schools,
+    <meta name="description" content="Pi STEM Services Team has started promoting STEM and innovation education since 2012. We provide customized courses and workshops for schools,
     NGOs and government divisions. Our onsite education services covered robotics, coding, science experiments, design thinking, logical thinking and a lot more. Hoping to provide more STEM learning opportunities
     for our next generation, we also provided free school-based STEM project consultations for schools on their STEM development plans.">
 
@@ -42,20 +42,14 @@
     <!-- CSS Global Compulsory -->
     <link rel="stylesheet" href="../assets/vendor/bootstrap/bootstrap.min.css">
 
-    <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="../assets/vendor/icon-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../assets/vendor/icon-line/css/simple-line-icons.css">
-    <link rel="stylesheet" href="../assets/vendor/icon-line-pro/style.css">
-    <link rel="stylesheet" href="../assets/vendor/icon-hs/style.css">
-    <link rel="stylesheet" href="../assets/vendor/animate.css">
-    <link rel="stylesheet" href="../assets/vendor/fancybox/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="../assets/vendor/slick-carousel/slick/slick.css">
-    <link rel="stylesheet" href="../assets/vendor/dzsparallaxer/dzsparallaxer.css">
-    <link rel="stylesheet" href="../assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
-    <link rel="stylesheet" href="../assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
-    <link rel="stylesheet" href="../assets/vendor/typedjs/typed.css">
-    <link rel="stylesheet" href="../assets/vendor/hs-megamenu/src/hs.megamenu.css">
-    <link rel="stylesheet" href="../assets/vendor/hamburgers/hamburgers.min.css">
+      <!-- CSS Implementing Plugins -->
+      <link rel="stylesheet" href="../assets/vendor/icon-awesome/css/font-awesome.min.css">
+      <link rel="stylesheet" href="../assets/vendor/icon-line/css/simple-line-icons.css">
+      <link rel="stylesheet" href="../assets/vendor/icon-line-pro/style.css">
+      <link rel="stylesheet" href="../assets/vendor/icon-hs/style.css">
+      <link rel="stylesheet" href="../assets/vendor/dzsparallaxer/dzsparallaxer.css">
+      <link rel="stylesheet" href="../assets/vendor/hs-megamenu/src/hs.megamenu.css">
+      <link rel="stylesheet" href="../assets/vendor/hamburgers/hamburgers.min.css">
 
     <!-- CSS Unify -->
     <link rel="stylesheet" href="../assets/css/unify.css">
@@ -92,7 +86,7 @@
 
               <!-- Logo -->
               <a href="index.html" class="navbar-brand">
-                <img src="../assets/img/logo/logo.png" alt="Pi Innovation Logo">
+                <img src="../assets/img/logo/logo.png" alt="Pi STEM Services Logo">
               </a>
               <!-- End Logo -->
 
@@ -101,7 +95,7 @@
                    id="navBar" ng-controller="MenuController as menuItems">
                 <ul class="navbar-nav g-pos-rel g-font-weight-600 ml-auto">
                   <li class="nav-item g-mx-10--lg g-mx-15--xl" ng-repeat="item in menuItems.items" ng-class="{'hidden-sm-up': item.mobileOnly}">
-                    <a ng-href="{{item.link}}" class="nav-link g-py-7 g-px-0" ng-class="getClassForItem(item.link)">{{item.eName}}</a>
+                    <a ng-href="{{item.link}}" class="nav-link g-py-7 g-px-0" ng-class="getClassForItem(item.link)" target="{{item.openInBlank ? '_blank' : '_self'}}">{{item.eName}}</a>
                   </li>
 
                   <li class="nav-item g-mx-10--lg g-mx-15--xl">
@@ -122,7 +116,7 @@
       <!-- End Header -->
 
       <!-- Promo Block large screen-->
-      <section class="g-bg-cover g-bg-img-hero hidden-sm-down" style="background-image: url(../assets/img/banner/rsz_website_banner-min-en.png);">
+      <section class="g-bg-cover g-bg-img-hero hidden-sm-down" style="background-image: url(../assets/img/banner/banner-en.png);">
         <div class="container g-pt-350 g-pb-70"></div>
       </section>
       <!-- End Promo Block -->
@@ -131,7 +125,7 @@
       <section class="g-bg-cover g-bg-img-hero g-bg-bluegray-opacity-0_3--after hidden-sm-up" style="background-image: url(../assets/img/banner/banner_sm.png);">
         <div class="container g-pt-70 g-pb-40">
           <div class="text-center g-pos-rel g-z-index-1 g-mb-30">
-            <span class="d-block g-color-white g-font-weight-700 g-font-size-20 text-uppercase g-letter-spacing-5">PI INNOVATION</span>
+            <span class="d-block g-color-white g-font-weight-700 g-font-size-20 text-uppercase g-letter-spacing-5">PI STEM SERVICES</span>
             <!--<h1 class="g-color-white g-font-weight-700 g-font-size-20 g-font-size-50&#45;&#45;md text-uppercase g-line-height-1_2 g-letter-spacing-10 mb-4">你的STEM教育夥伴</h1>-->
             <span class="d-block lead g-font-weight-300 g-color-white g-letter-spacing-2">Your STEM Education Partner</span>
           </div>
@@ -355,52 +349,22 @@
     <script src="../assets/vendor/tether.min.js"></script>
     <script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
 
-    <!-- JS Implementing Plugins -->
-    <script src="../assets/vendor/slick-carousel/slick/slick.js"></script>
-    <script src="../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
-    <script src="../assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
-    <script src="../assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
-    <script src="../assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
-    <script src="../assets/vendor/fancybox/jquery.fancybox.min.js"></script>
-    <script src="../assets/vendor/typedjs/typed.min.js"></script>
+  <!-- JS Implementing Plugins -->
+  <script src="../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="../assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
 
-    <!-- JS Unify -->
-    <script src="../assets/js/hs.core.js"></script>
-    <script src="../assets/js/components/hs.header.js"></script>
-    <script src="../assets/js/helpers/hs.hamburgers.js"></script>
-    <script src="../assets/js/components/hs.tabs.js"></script>
-    <script src="../assets/js/components/hs.popup.js"></script>
-    <script src="../assets/js/components/text-animation/hs.text-slideshow.js"></script>
-    <script src="../assets/js/components/hs.go-to.js"></script>
+  <!-- JS Unify -->
+  <script src="../assets/js/hs.core.js"></script>
+  <script src="../assets/js/components/hs.header.js"></script>
+  <script src="../assets/js/helpers/hs.hamburgers.js"></script>
+  <script src="../assets/js/components/hs.tabs.js"></script>
+  <script src="../assets/js/components/hs.go-to.js"></script>
 
-    <!-- JS Customization -->
-    <script src="../assets/js/custom.js"></script>
+  <!-- JS Customization -->
+  <script src="../assets/js/custom.js"></script>
 
     <!-- JS Plugins Init. -->
     <script>
-      $(document).on('ready', function () {
-
-        // initialization of tabs
-        $.HSCore.components.HSTabs.init('[role="tablist"]');
-
-        // initialization of popups
-        $.HSCore.components.HSPopup.init('.js-fancybox');
-
-        // initialization of go to
-        $.HSCore.components.HSGoTo.init('.js-go-to');
-
-        // initialization of text animation (typing)
-        $(".u-text-animation.u-text-animation--typing").typed({
-          strings: [
-            "an awesome template",
-            "perfect template",
-            "just like a boss"
-          ],
-          typeSpeed: 60,
-          loop: true,
-          backDelay: 1500
-        });
-      });
 
       $(window).on('load', function () {
         // initialization of header

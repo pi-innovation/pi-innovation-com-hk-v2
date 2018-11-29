@@ -10,14 +10,8 @@ angular.module('piApp.controllers')
         mobileOnly: false,
       },
       {
-        cName: '家長專區',
-        eName: 'Parents',
-        link: 'parents.html',
-        mobileOnly: false,
-      },
-      {
-        cName: '學校課程',
-        eName: 'Schools',
+        cName: '課程',
+        eName: 'Courses',
         link: 'course.html',
         mobileOnly: false,
       }, {
@@ -29,7 +23,7 @@ angular.module('piApp.controllers')
         cName: '過往專案',
         eName: 'Portfolio',
         link: 'https://medium.com/pi-innovation',
-        mobileOnly: true,
+        mobileOnly: false,
         openInBlank: true
       }, {
         cName: '客戶／合作夥伴',
