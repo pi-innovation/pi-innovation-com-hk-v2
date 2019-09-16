@@ -27,7 +27,7 @@ angular.module('piApp.controllers')
         openInBlank: true
       }, {
         cName: '教材銷售',
-        eName: 'Portfolio',
+        eName: 'Teaching Materials',
         link: 'https://pistem.shoplineapp.com/',
         mobileOnly: false,
         openInBlank: true
