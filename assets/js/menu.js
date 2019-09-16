@@ -1,5 +1,5 @@
 angular.module('piApp.controllers')
-  .controller('MenuController',  ['$scope', '$location', function ($scope, $location) {
+  .controller('MenuController', ['$scope', '$location', function ($scope, $location) {
 
     var menuItems = this;
     menuItems.items = [
@@ -26,6 +26,12 @@ angular.module('piApp.controllers')
         mobileOnly: false,
         openInBlank: true
       }, {
+        cName: '教材銷售',
+        eName: 'Portfolio',
+        link: 'https://pistem.shoplineapp.com/',
+        mobileOnly: false,
+        openInBlank: true
+      }, {
         cName: '客戶／合作夥伴',
         eName: 'Clients & Partners',
         link: 'partners.html',
@@ -40,25 +46,25 @@ angular.module('piApp.controllers')
         eName: 'Join Us',
         link: 'joinus.html',
         mobileOnly: false,
-      }
+      },
     ];
 
-    $scope.isActive = function(link) {
+    $scope.isActive = function (link) {
       return $location.absUrl().indexOf(link) > -1;
     };
 
-    $scope.getClassForItem = function(link){
-      if($scope.isActive(link)) return 'g-color-primary'
+    $scope.getClassForItem = function (link) {
+      if ($scope.isActive(link)) return 'g-color-primary'
     }
 
-    $scope.getClassForLang = function(lang){
+    $scope.getClassForLang = function (lang) {
       paths = $location.absUrl().split('/')
-      if(paths[paths.length-2] == lang) return 'g-color-primary'
+      if (paths[paths.length - 2] == lang) return 'g-color-primary'
     }
 
-    $scope.currentItem = function(){
+    $scope.currentItem = function () {
       paths = $location.absUrl().split('/')
-      return paths[paths.length-1]
+      return paths[paths.length - 1]
     }
 
     $scope.$location = $location;
